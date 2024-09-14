@@ -36,6 +36,10 @@ def update():
     if flowercollected:
         score = score+10
         placeflower()
-    
 
+# Check if the score has reached or exceeded 500
+    if score >= 500:
+        print("Score reached 500. Game over!")
+        break  # Exit the loop and end the game
+    
 pgzrun.go()
